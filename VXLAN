@@ -1,0 +1,18 @@
+Each VM has its own MAC.
+lots of VMs => lots of MAC => huge MAC address table in the switch.
+
+Switch helps PC to communicate with each other on the same LAN, ie -
+1. In same IP-subnet.
+2. communicatio happens with the help of MAC address.
+
+when a packet is sent from one machine (pc1) to PC2 connnected via routers.
+then when pkts reaches to router R1, then configuration is- 
+src_mac, src_ip = pc1.
+dest_mac = R1
+dest_ip = pc2
+
+configuration when pkt goes out from R1 to R2-
+src_mac = R1
+src_ip = R1
+dest_mac = R2
+dest_ip = R2
